@@ -1,0 +1,301 @@
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jadwal XII DKV 1</title>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("pexels-mack-kamp-644644-1449455.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* 🔹 NAVBAR SEJAJAR DAN RAPI */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;     /* Biar vertikalnya sejajar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+}
+
+.brand {
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+  white-space: nowrap; /* biar teks brand gak turun ke bawah */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center; /* pastikan link sejajar vertikal */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* 🔹 Dropdown sejajar dengan link lain */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 200;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Spasi agar isi tidak ketutup navbar */
+main {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* 🎯 TABEL DI TENGAH & PROPORSIONAL */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.45);
+  font-weight: bold;
+}
+
+/* efek hover lembut */
+tr:hover {
+  background: rgba(255, 255, 255, 0.55);
+  transition: 0.3s;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Responsif di HP */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    width: 95%;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+   <div class="brand">Bayu Agung Triwibawanto</div>
+    <nav class="nav-links">
+      <a href="index1.html">Beranda</a>
+      <a href="index (4).html">Tentang Saya</a>
+      <div class="dropdown">
+        <a href="#">Menghitung ▾</a>
+        <div class="dropdown-content">
+          <a href="index (6).html">Luas</a>
+          <a href="index (3).html">Volume</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Jadwal Pelajaran XII DKV 1</h1>
+    <table style="width: 100%;">
+        <tr>
+            <th rowspan="2">Jam</th>
+            <th colspan="5">Hari</th>
+        </tr>
+        <tr>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jumat</th>
+        </tr>
+        <tr>
+            <td>07:00 - 07:40</td>
+            <td>Upacara</td>
+            <td>Konsentrasi Keahlian 5</td>
+            <td>Konsentrasi Keahlian 4</td>
+            <td>Konsentrasi Keahlian 12 (Mata Pelajaran Pilihan)</td>
+             <td>Pengajian</td>
+        </tr>
+        <tr>
+            <td>07:40 - 08:20</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Konsentrasi Keahlian 5</td>
+            <td>Konsentrasi Keahlian 4</td>
+            <td>Konsentrasi Keahlian 12 (Mata Pelajaran Pilihan)</td>
+            <td>Bahasa Indonesia</td>
+        </tr>
+        <tr>
+            <td>08:20 - 09:00</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Konsentrasi Keahlian 5</td>
+            <td>Konsentrasi Keahlian 4</td>
+            <td>Konsentrasi Keahlian 12 (Mata Pelajaran Pilihan)</td>
+            <td>Bahasa Indonesia</td>
+        </tr>
+        <tr>
+            <td>09:00 - 09:40</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Konsentrasi Keahlian 5</td>
+            <td>Kewirausahaan</td>
+            <td>Konsentrasi Keahlian 12 (Mata Pelajaran Pilihan)</td>
+            <td>Bahasa Indonesia</td>
+        </tr>
+        <tr>
+            <td>09:40 - 10:00</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+        </tr>
+        <tr>
+            <td>10:00 - 10:40</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Pendidikan Agama Islam</td>
+            <td>Kewirausahaan</td>
+            <td>Konsentrasi Keahlian 4</td>
+            <td>Bahasa Inggris</td>
+        </tr>
+        <tr>
+            <td>10:40 - 11:20</td>
+            <td>Bahasa Korea</td>
+            <td>Pendidikan Agama Islam</td>
+            <td>Kewirausahaan</td>
+            <td>Konsentrasi Keahlian 4</td>
+            <td>Bahasa Inggris</td>
+        </tr>
+         <tr>
+            <td>11:20 - 12:00</td>
+            <td>Bahasa Korea</td>
+            <td>Pendidikan Agama Islam</td>
+            <td>Kewirausahaan</td>
+            <td>Konsentrasi Keahlian 4</td>
+            <td>Istirahat</td>
+        </tr>
+         <tr>
+            <td>12:00 - 12:45</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Sholat Jumat</td>
+        </tr>
+         <tr>
+            <td>12:45 - 13:25</td>
+            <td>Konsentrasi Keahlian 5</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Kewirausahaan</td>
+            <td>Pendidikan Pancasila</td>
+            <td>Jumsih</td>
+        </tr>
+         <tr>
+            <td>13:25 - 14:05</td>
+            <td>KKonsentrasi Keahlian 5</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Matematika</td>
+            <td>Pendidikan Pancasila</td>
+            <td>Ekstrakulikuler</td>
+        </tr>
+         <tr>
+            <td>14:05 - 14:45</td>
+            <td>Konsentrasi Keahlian 5</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Matematika</td>
+            <td>Bahasa Inggris</td>
+             <td>Ekstrakulikuler</td>
+        </tr>
+         <tr>
+            <td>14:45 - 15:25</td>
+            <td>Konsentrasi Keahlian 5</td>
+            <td>Konsentrasi Keahlian 3</td>
+            <td>Matematika</td>
+            <td>Bahasa Inggris</td>
+             <td>Ekstrakulikuler</td>
+        </tr>
+    </table>
+</body>
+</html>

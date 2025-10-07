@@ -1,0 +1,220 @@
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bayu Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Navbar */
+  /* Navbar */
+/* Navbar */
+.navbar {
+  background: transparent;
+  padding: 20px 25px; /* kiri dan kanan lebih kecil biar mepet */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* Nama / brand */
+.brand {
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-left: 0; /* nempel ke kiri */
+}
+
+/* Menu navigasi */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  margin-right: 0; /* agar mepet kanan */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1;
+      border-radius: 8px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      border-radius: 6px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Hero section (background full 1 layar) */
+    .about-header {
+      background: url("pexels-kaip-597909.jpg") center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Overlay gelap */
+    .about-header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+    /* Tulisan besar samar */
+    .about-header::before {
+      content: "About Me";
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      font-weight: 800;
+      color: rgba(255,255,255,0.08);
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    /* Teks selamat datang di atas */
+    .about-header h1 {
+      font-size: 30px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 500;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+
+    /* Card foto + teks di tengah */
+    .about-content {
+      position: relative;
+      z-index: 2;
+      background: rgba(255,255,255,0.1);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+    }
+
+    .about-content img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .about-text {
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .about-text h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .about-text h2 span {
+      color: #00aaff;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+   <div class="brand">Bayu Agung Triwibawanto</div>
+    <nav class="nav-links">
+      <a href="index1.html">Beranda</a>
+      <a href="index (5).html">Jadwal</a>
+      <div class="dropdown">
+        <a href="#">Menghitung ▾</a>
+        <div class="dropdown-content">
+          <a href="index (6).html">Luas</a>
+          <a href="index (3).html">Volume</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="about-header">
+    <h1>   </h1>
+
+    <div class="about-content">
+      <img src="bayuk.jpeg" alt="Foto Profil">
+      <div class="about-text">
+        <h2>Hello I’m <span>Bayu Agung </span></h2>
+        <p>Saya seorang pelajar yang memiliki minat di bidang Desain Grafis dan Desain Web.</p>
+        <p>Saat ini saya sedang mengembangkan website pribadi sebagai portofolio untuk menunjukkan hasil karya saya.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

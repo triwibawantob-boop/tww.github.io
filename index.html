@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mawan Blog</title>
+    <link rel="stylesheet" href="gaya.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Mawan Blog</a>
+
+                <!-- Desktop Menu -->
+                <nav class="desktop-nav">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="jadwal.html" class="nav-link">Jadwal Pelajaran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="lagu.html" class="nav-link">Syair Lagu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Menghitung</a>
+                            <div class="dropdown">
+                                <a href="luas.html" class="dropdown-link">Luas Persegi</a>
+                                <a href="volume.html" class="dropdown-link">Volume Kotak</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tentang.html" class="nav-link">Tentang Saya</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="jadwal.html">Jadwal Pelajaran</a></li>
+                <li><a href="lagu.html">Syair Lagu</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubmenu(event)">Menghitung</a>
+                    <ul class="mobile-submenu" id="submenu" style="display: none;">
+                        <li><a href="luas.html">Luas Persegi</a></li>
+                        <li><a href="volume.html">Volume Kotak</a></li>
+                    </ul>
+                </li>
+                <li><a href="tentang.html">Tentang Saya</a></li>
+            </ul>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="welcome-section">
+                <h1>Selamat Datang di Mawan Blog</h1>
+                <p>Portal informasi lengkap untuk jadwal pelajaran, syair lagu, kalkulator matematika, dan berbagai konten menarik lainnya. Jelajahi berbagai fitur yang tersedia untuk mendukung aktivitas belajar dan hiburan Anda.</p>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>📅 Python</h3>
+                        <p>Python adalah bahasa pemrograman yang paling disukai oleh pelajar. Simak artikel ini untuk penjelasan lebih lanjut.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>🔢 HTML</h3>
+                        <p>Semua halaman web dibangun dengan kerangka berupa HTML. Artikel ini menjelaskan apa itu HTML dan manfaatnya.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>🎵 CSS</h3>
+                        <p>Tampilan web akan tampak tidak menarik tampa PHP. Mari pelajari bagaimana menggunakan CSS pada artikel ini.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>👤 Java Script</h3>
+                        <p>Tanpa JavaScript, sebuah halaman web akan tampak statis dan tidak menarik. Simak trik-trik JavaScript di sini.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="kode.js"></script>
+</body>
+</html>
